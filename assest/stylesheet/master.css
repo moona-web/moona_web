@@ -1,0 +1,536 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.menu {
+    width: 100%;
+    height: 120px;
+    /* border: 2px solid black; */
+}
+
+.menu * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu>span {
+    width: 25%;
+    /* border: 1px solid green; */
+    text-transform: capitalize;
+    font-size: 55px;
+    padding-left: 35px;
+    font-weight: bold;
+}
+
+.menu>ul {
+    width: 50%;
+    /* border: 1px solid blue; */
+    justify-content: center;
+}
+
+.menu>ul>li {
+    /* background-color: aqua; */
+    width: 100%;
+    position: relative;
+}
+
+.menu>ul>li>a {
+    /* background-color: deeppink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.menu>ul>li:hover>.sub,
+.menu>ul>li:hover>.sub1 {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.sub {
+    /* border: 3px solid red; */
+    width: 300%;
+    height: 150px;
+    position: absolute;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub>li {
+    border: 1px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    transition: .4s;
+    /* background-color: aqua; */
+    margin: 10px 10px;
+    /* height: 100%; */
+}
+
+.sub>li>a {
+    border: 3px solid rgb(1, 14, 1);
+    /* background-color: rgb(255, 0, 170); */
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.sub1 {
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub1>li {
+    /* background-color: chartreuse; */
+    border: 2px solid rgb(19, 17, 17);
+    transition: .4s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sub1>li>a {
+    background-color: rgba(128, 128, 128, 0.842);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid rgb(5, 5, 5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub1>li:hover>a {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(19, 17, 17);
+}
+
+.sub>li:hover>a {
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(19, 17, 17);
+}
+
+.menu>section {
+    height: 70%;
+    width: 15%;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.para {
+    background-color: rgb(238, 238, 125);
+    width: 100%;
+    height: 500px;
+    /* border: 6px solid yellowgreen; */
+}
+
+.para * {
+    align-items: center;
+    width: 50%;
+}
+
+.para>figure {
+    /* border: 2px solid purple; */
+}
+
+.para>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.para>span {
+    /* border: 2px solid orangered; */
+}
+
+.para>span * {
+    width: 100%;
+    text-transform: capitalize;
+    padding: 10px 100px;
+}
+
+.para>span>h1 {
+    /* border: 2px solid rgb(51, 180, 231); */
+    margin-top: 90px;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.para>span>h6 {
+    /* border: 2px solid rgb(68, 240, 63); */
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.para>span>h3 {
+    width: 30%;
+    /* border: 2px solid rgb(65, 12, 43); */
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+.box {
+    width: 100%;
+    height: 600px;
+    border: 6px solid red;
+    margin-top: 70px;
+    display: flex;
+}
+
+.box>div {
+    width: 30%;
+    border: 2px solid rgb(31, 201, 88);
+    margin: 20px;
+}
+
+.box>:nth-of-type(1) {
+    background: rgba(252, 176, 14, 0.993);
+}
+
+.box>:nth-of-type(1)>* {
+    text-align: center;
+}
+
+.box>:nth-of-type(1)>h6 {
+    /* border: 1px solid rgb(31, 42, 201); */
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box>:nth-of-type(1)>h1 {
+    /* border: 1px solid rgb(145, 18, 113); */
+    margin-top: 5px;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.box>:nth-of-type(1)>figure {
+    height: 150px;
+}
+
+.box>:nth-of-type(1)>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.box>:nth-of-type(1)>section {
+    width: 60%;
+    height: 80px;
+    /* border: 1px solid rgb(31, 34, 201); */
+    margin: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box>:nth-of-type(1)>section>p {
+    width: 45%;
+    height: 40px;
+    /* border: 1px solid rgb(119, 7, 95); */
+    margin: 5px 5px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(196, 119, 18);
+    text-transform: capitalize;
+}
+
+.box>:nth-of-type(2) {
+    background: rgb(50, 252, 43);
+}
+
+.box>:nth-of-type(2)>* {
+    text-align: center;
+}
+
+.box>:nth-of-type(2)>h6 {
+    /* border: 1px solid rgb(31, 42, 201); */
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box>:nth-of-type(2)>h1 {
+    /* border: 1px solid rgb(145, 18, 113); */
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 3px;
+    line-height: 55px;
+}
+
+.box>:nth-of-type(2)>figure {
+    height: 150px;
+}
+
+.box>:nth-of-type(2)>figure>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.box>:nth-of-type(2)>section {
+    width: 80%;
+    height: 80px;
+    /* border: 1px solid rgb(31, 34, 201); */
+    margin: 42px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box>:nth-of-type(2)>section>p {
+    width: 25%;
+    height: 40px;
+    /* border: 1px solid rgb(119, 7, 95); */
+    margin: 5px 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(9, 158, 9);
+    text-transform: capitalize;
+}
+
+.box>:nth-of-type(2)>section>:last-child {
+    margin-left: 110px;
+}
+
+.box>:nth-of-type(3) {
+
+    background: rgb(252, 43, 43);
+}
+
+.box>:nth-of-type(3)>* {
+    text-align: center;
+}
+
+.box>:nth-of-type(3)>h6 {
+    /* border: 1px solid rgb(31, 42, 201); */
+    margin-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box>:nth-of-type(3)>h1 {
+    /* border: 1px solid rgb(145, 18, 113); */
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 3px;
+    line-height: 55px;
+}
+
+.box>:nth-of-type(3)>figure {
+    height: 150px;
+}
+
+.box>:nth-of-type(3)>figure>img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.box>:nth-of-type(3)>section {
+    width: 80%;
+    height: 80px;
+    /* border: 1px solid rgb(31, 34, 201); */
+    margin: 42px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box>:nth-of-type(3)>section>p {
+    width: 25%;
+    height: 40px;
+    /* border: 1px solid rgb(119, 7, 95); */
+    margin: 5px 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(138, 11, 11);
+    text-transform: capitalize;
+}
+
+.box>:nth-of-type(3)>section>:last-child {
+    margin-left: 110px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    /* border: 5px solid rgb(117, 18, 96); */
+    margin-top: 100px;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+
+.pic {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.082);
+    /* border: 5px solid blue; */
+}
+
+.pic>div {
+    width: 20%;
+    height: 80%;
+    /* border: 2px solid red; */
+    margin: 50px 20px;
+}
+
+.pic>div>ul {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+}
+
+.pic>div>ul>li {
+    /* background-color: chartreuse; */
+    border: 2px solid rgb(19, 17, 17);
+    height: 15%;
+    margin-bottom: 10px;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.pic>div>ul>li>a {
+    background-color: rgba(128, 128, 128, 0.185);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    /* border: 2px solid rgb(248, 247, 247); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic>div>ul>li:hover>a {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(19, 17, 17);
+}
+
+.pic>figure {
+    width: 70%;
+    height: 80%;
+    /* border: 2px solid green; */
+    margin: 50px 20px;
+}
+
+.pic>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt {
+    /* border: 2px solid blue; */
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 100px;
+    /* background-color: rgba(128, 128, 128, 0.123); */
+}
+
+.note {
+    font-size: 30px;
+    text-align: center;
+    /* border: 5px solid rgb(117, 18, 96); */
+}
+
+.images {
+    width: 100%;
+    height: 100vh;
+    /* border: 5px solid rgb(19, 141, 35); */
+    display: flex;
+}
+
+.images>div {
+    width: 30%;
+    height: 70%;
+    /* border: 5px solid rgb(243, 46, 20); */
+    margin: 120px 100px;
+    transition: .4s;
+}
+
+.images>div>figure {
+    width: 100%;
+    height: 40%;
+    /* border: 5px solid rgb(14, 13, 13); */
+}
+
+.images>div:hover>h4 {
+    opacity: 1;
+}
+
+.images>div>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.images>div>h2 {
+    /* border: 2px solid aqua; */
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+.images>div>h4 {
+    /* border: 2px solid orangered; */
+    margin-top: 40px;
+    line-height: 25px;
+    font-size: 15px;
+    opacity: 0;
+}
